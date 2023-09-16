@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Básico do HTML - João Victor</title>
+
+    <link rel="stylesheet" href="style/tags.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1 title="Logo">Básico do <i class="bi bi-filetype-html"></i></h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><i class="bi bi-house"></i> Home</a>
+            <a href="introduction.html"><i class="bi bi-bar-chart"></i> Introdução</a>
+            <a href="tags.html" class="menuSelected"><i class="bi bi-filetype-html"></i> HTML</a>
+            <a href="css.html"><i class="bi bi-filetype-css"></i> CSS</a>
+            <a target="_blank" href="https://github.com/astracoder" class="example">GitHub</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="mainContainer">
+            <div class="mainContentText">
+                <h1 class="mainTitle">Mostrando algumas TAGS do HTML</h1>
+                <p class="mainText">
+                    Essas tags são as mais usadas no dia a dia de quem faz sites.
+                </p>
+                <a href="introduction.html"><button class="mainCta">Conhecer <i class="bi bi-arrow-down"></i></button></a> 
+            </div>
+            <div class="mainContentImage">
+                <a target="_blank" href="https://storyset.com"><img title="João está programando...." src="imgs/tagscode.png" alt="Banner do site principal"></a>
+            </div>
+        </div>
+    </main>
+
+    <section class="contentIntroduction">
+        <div id="selectScroll" class="HTML">
+            <h1>Oque é a tag "head"</h1>
+            <p><span>head:</span> É um dos mais importantes, essa tag engloba e fornece ao site as informações globais como: Dados sobre o documento, metadados para o SEO do Google "rankear" melhor a sua página, título da página, link de scripts JavaScript e CSS, entre outros...</p>
+            <p><span>meta charset="utf-8":</span> O programador por principio pode definir o "set" de configurações iniciais de visualização dos caracteres do site, o padrão mais conhecido é o UTF-8, ele consegue codificar caracteres especiais.</p>
+            <p><span>meta name="viewport":</span> A função dessa tag é controlar como será exibido o site em um dispositivo móvel, como celular, tabled, etc.</p>
+            <p><span>title:</span> Essa tag é uma das mais simples, o conteúdo que você colocar dentro dela vai ser exibido como nome da página, nas abas dos navegadores.</p>
+            <p><span>link:</span> Se você quiser "vincular" o CSS com a sua página HTML, vai precisar usar essa tag, o <span>rel="stylesheet"</span> fala que é um arquivo de folha de estilo e o <span>href="style/tags.css"</span> indica aonde está localizado o meu arquivo CSS.</p>
+            <img src="imgs/taghead.png" alt="Mostrando a tag HEAD">
+        </div>
+        <div class="HTML">
+            <h1>Body: Oque é a tag "body"</h1>
+            <p><span>body:</span> Todo o site por trás, existe uma estrutura grande ou pequena, mas todos são comportados através de uma tag chamada "body", é necessário que exista algum elemento filho dentro do body para que possa ser visualizado algo no site.</p>
+            <img src="imgs/tagbody.png" alt="Mostrando a tag BODY"> 
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "header"</h1>
+            <p><span>header:</span> É uma tag que pode ser utilizada para comportar os elementos filhos de alguma navbar ou conteudo que seja o cabeçalho principal.</p>
+            <img src="imgs/tagheader.png" alt="Mostrando a tag HEADER">
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "main"</h1>
+            <p><span>main:</span> Quando seu site tem uma estrutura pequena e consegue ser facilmente estruturado com 3 partes, por exemplo: header, main e footer... o main seria aonde ficaria o conteúdo principal do site.</p>
+            <img src="imgs/tagmain.png" alt="Mostrando a tag MAIN">
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "section"</h1>
+            <p><span>section:</span> Seu site vai ter vários tópicos ou conteúdos? Eu recomendo que coloque a tag section, para que você possa estruturar de uma forma mais simples e de fácil compreensão.</p>
+            <img src="imgs/tagsection.png" alt="Mostrando a tag SECTION">
+        </div>
+        <div class="HTML">   
+            <h1>Oque é a tag "H1"</h1>
+            <p><span>h1:</span> Essa tag com toda certeza é uma das mais usadas, mais de fato é, porque ela pode ser usada toda vez que você quer mencionar um titúlo no seu site. Ela vai do H1 até o H6, alterando o tamanho da fonte, mais você consegue tranquilamente mudar o tamanho da fonte de qualquer tag HTML utilizando o CSS.</p>
+            <img src="imgs/tagh1.png" alt="Mostrando a tag H1">
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "P"</h1>
+            <p><span>p:</span> Ela conjuntamente à tag H1 vai ser usada demais, porque geralmente depois de um título vem uma paragrafo para descrever o conteúdo do título, então essa tag sem dúvidas vai ser usada muito.</p>
+            <img src="imgs/tagp.png" alt="Mostrando a tag P">
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "IMG"</h1>
+            <p><span>img:</span> A tag img é usada para você linkar uma imagem ao seu site, ela tem dois parâmetros, um é o diretório aonde a imagem se encontra e o outro é o "alt", para que as pessoas com algum tipo de dificuldade ou deficiencia consiga saber o que essa imagem se retrata.</p>
+            <img src="imgs/tagimg.png" alt="Mostrando a tag IMG">
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "BUTTON"</h1>
+            <p><span>button:</span> Essa tag é muito boa, pelo seguinte motivo, quando você quer que o usuário faça alguma ação no seu site ou quer que ele seja redirecionado para algum lugar, muito provavelmente vai ser com a tag button.</p>
+            <img src="imgs/tagbutton.png" alt="Mostrando a tag BUTTON">
+        </div>
+        <div class="HTML">
+            <h1>Oque é a tag "A"</h1>
+            <p><span>a:</span> Muito parecida com a função dos buttons, mais ela pode ser usada de forma mais inteligente, por exemplo, fazer uma navbar dentro de um header do seu site, fazendo com que as pessoas consigam navegar dentro das páginas do seu site. Nesse exemplo de baixo eu fiz ele redirecionando para o site do Google</p>
+            <img src="imgs/taga.png" alt="Mostrando a tag A">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Todos os direitos reservados ©️ - João Victor de Lima Rosa 🫡</p>
+        <p>Faculdade Positivo - Londrina, PR</p>
+    </footer>
+</body>
+</html>

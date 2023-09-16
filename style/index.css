@@ -1,0 +1,140 @@
+
+/* GLOBAL SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-boxs;
+    font-family: 'Roboto', Arial;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html, body {
+    color: #6a6768;
+    font-size: 1.6rem;
+    height: 100vh;
+    overflow-x: hidden;
+    background: #ED4264;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* HEADER CONTENT */
+
+.header {
+    padding: 2rem 20rem;
+    background: #fefefe;    
+    -webkit-box-shadow: 10px 10px 16px -12px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 10px 16px -12px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 16px -12px rgba(0,0,0,0.29);  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.header .logo h1{
+    font-size: 6rem;
+    font-family: 'Dancing Script';
+    font-weight: 400;
+}
+
+.header .navbar a{
+    color: #6a6768;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.header .navbar a:hover {
+    color: #ED4264;
+}
+
+.navbar a.menuSelected {
+    color: #ED4264;
+}
+
+.navbar a.example {
+    color: #fefefe;
+    background: #ED4264;
+    padding: 1rem;
+    transition: .5s ease;
+}
+
+.navbar a.example:hover {
+    color: #6a6768;
+    background: #FFEDBC;
+    border: 1px solid #ED4264;
+}
+
+/* MAIN CONTENT */
+
+.mainContainer {
+    padding: 2rem 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTitle {
+    color: #fefefe;
+    font-size: 7rem;
+    width: 65rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #fefefe;
+    margin-bottom: 3rem;
+}
+
+.mainText {
+    color: #eeeeee;
+    font-size: 2rem;
+    width: 65rem;
+}
+
+.mainCta {
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 5px;
+    width: 30rem;
+    height: 8rem;
+    margin-top: 5rem;
+    background: #fefefe;
+    border: 1px solid #454545;
+    padding: 1rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.mainCta:hover {
+    color: #fefefe;
+    background: #454545;
+    border: 1px solid #fefefe;
+    letter-spacing: 1px;
+}
+
+.mainCta i {
+    font-size: 0rem;
+    transition: .2s ease;
+}
+
+.mainCta:hover > i {
+    font-size: 2rem;
+}
+
+.mainContentImage img {
+    width: 70rem;
+    cursor: pointer;
+}
